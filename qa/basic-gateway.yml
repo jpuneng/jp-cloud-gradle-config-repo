@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: micro-financial-manager-route
+          uri: http://localhost:9200/
+          predicates:
+            - Path=/financial/**
