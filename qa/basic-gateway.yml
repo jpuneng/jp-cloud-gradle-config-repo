@@ -3,6 +3,6 @@ spring:
     gateway:
       routes:
         - id: micro-financial-manager-route
-          uri: http://localhost:9200/
+          uri: http://10.0.75.1:9200/
           predicates:
             - Path=/financial/**
