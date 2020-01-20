@@ -3,6 +3,6 @@ spring:
     gateway:
       routes:
         - id: micro-financial-manager-route
-          uri: http://wuja13-w10.corp.oocl.com/
+          uri: http://wuja13-w10.corp.oocl.com:9200/
           predicates:
             - Path=/financial/**
